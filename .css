@@ -1,0 +1,79 @@
+/* Centrar todo */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0d8c3;
+    margin: 0;
+    flex-direction: column;
+}
+/* Cuerpo de la papa */
+.potato_body {
+    background: radial-gradient(circle, rgb(212, 163, 115) 40%, #a67c52 80%);
+    height: 220px;
+    width: 180px;
+    border-radius: 50% 45% 40% 55%;
+    position: relative;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2),
+                5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+.inside_character {
+    height: 220px;
+    width: 180px;
+    border-radius: 50% 45% 40% 55%;
+    position: absolute;
+}
+/* Brazos */
+.arm {
+    width: 50px;
+    height: 10px;
+    background-color: #654321;
+    position: absolute;
+    top: 90px;
+    border-radius: 10px;
+    box-shadow: inset -2px -2px 3px rgba(0, 0, 0, 0.2);
+}
+.left-arm {
+    left: -50px;
+    transform: rotate(-30deg);
+}
+.right-arm {
+    right: -50px;
+    transform: rotate(30deg);
+}
+/* Pies */
+.foot {
+    width: 40px;
+    height: 20px;
+    background: linear-gradient(to top, #654321, #a67c52);
+    border-radius: 50%;
+    position: absolute;
+    bottom: -15px;
+}
+.left-foot {
+    left: 50px;
+}
+.right-foot {
+    right: 50px;
+}
+@keyframes move-arms {
+    0% { transform: rotate(-30deg); }
+    50% { transform: rotate(-10deg); }
+    100% { transform: rotate(-30deg); }
+}
+
+@keyframes move-arms-right {
+    0% { transform: rotate(30deg); }
+    50% { transform: rotate(10deg); }
+    100% { transform: rotate(30deg); }
+}
+
+/* Aplica la animación a los brazos */
+.left-arm, .small-left-arm {
+    animation: move-arms 1s infinite alternate ease-in-out;
+}
+
+.right-arm, .small-right-arm {
+    animation: move-arms-right 1s infinite alternate ease-in-out;
+}

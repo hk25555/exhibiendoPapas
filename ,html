@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href=".css">
+    <title>Proyecto UAEM</title>
+</head>
+<body>
+    
+   <h1>LA PAPA DEMONIACA</h1>
+    <div class="potato_body">
+        <img src="IMAGEN.png" class="inside_character">
+        <div class="cartoon">
+            <div class="jaw b"></div>
+            <div class="head b ha hb">
+                <div class="eye hb"></div>
+                <div class="eye hb"></div>
+                <div class="nose ha"></div>
+            </div>
+            <div class="cheeks b"></div>
+            <div class="cheeks b"></div>
+            <div class="chin b"></div>
+            <div class="mouth ha hb"></div>
+        <div class="arm left-arm"></div>
+        <div class="arm right-arm"></div>
+        <div class="foot left-foot"></div>
+        <div class="foot right-foot"></div>
+    </div>
+</body>
+</html>
